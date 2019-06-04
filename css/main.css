@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Wendy+One&display=swap');
+
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#home {
+  width: 100%;
+  height: 125vh;
+}
+
+.title {
+  position: relative;
+  top: 65vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: 'Wendy One', sans-serif;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  border-radius: 10px;
+  border: solid black 2px;
+  font-size: 1.2em;
+  padding: 10px 15px 10px 15px;
+  background: none;
+}
+main {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.next-shows {
+  border-radius: 5px;
+  border: solid white 1px;
+}
+.shows-header-image h2 {
+  margin: 30px 0px;
+}
+li {
+  list-style: none;
+}
+
+.table {
+  color: white;
+}
+
+.row {
+  margin: 50px 0;
+}
