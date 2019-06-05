@@ -7,7 +7,6 @@ window.addEventListener('scroll', function(e) {
   $background.style.top = `-${scrollPosition / 3}px`
   if (!ticking) {
     window.requestAnimationFrame(function() {
-      doSomething(last_known_scroll_position);
       ticking = false;
     });
   }
