@@ -9,10 +9,15 @@ body {
 #background-image{
   position: fixed;
   z-index: -999;
+  text-align: center
   top: 0px;
 }
 #background-image img {
-  width: 100%;
+  position: relative;
+  width: 150%;
+  min-width: 800px;
+  left: 50%;
+  transform: translateX(-60%);
 }
 
 #home {
@@ -24,6 +29,8 @@ body {
   position: relative;
   top: 65vh;
   text-align: center;
+  color: #A51A17;
+  text-shadow: 5px 5px  black;
 }
 
 h1 {
@@ -34,10 +41,13 @@ h1 {
 
 .btn {
   border-radius: 10px;
-  border: solid black 2px;
+  border: solid #A51A17 2px;
   font-size: 1.2em;
+  font-weight: bolder;
   padding: 10px 15px 10px 15px;
-  background: none;
+  background: #C9B985;
+  color: #A51A17;
+  box-shadow: 2px 2px 0px black;
 }
 .section {
   background-color: black;
@@ -68,4 +78,10 @@ li {
 
 .row {
   margin: 50px 0;
+}
+@media screen and (min-width: 1025px) {
+#background-image img {
+  width: 100%;
+    transform: translateX(-50%);
+}
 }
