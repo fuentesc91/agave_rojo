@@ -1,14 +1,12 @@
-const $background = document.getElementById('background-image');
-let scrollPosition = 0;
-let ticking = false;
+const $headerImg = document.getElementById('header-img');
+const $navbar = document.getElementById('navbar');
 
-window.addEventListener('scroll', function(e) {
-  scrollPosition = window.scrollY;
-  $background.style.top = `-${scrollPosition / 3}px`
-  if (!ticking) {
-    window.requestAnimationFrame(function() {
-      ticking = false;
-    });
+window.onscroll = function () {
+  console.log(window.pageYOffset);
+  if (window.pageYOffset > 10 ){
+    $headerImg.classList.add('scrolled');
+    // $navbar.classList.add('navbar-dark', 'bg-dark');
+  }else{
+    $headerImg.classList.remove('scrolled');
   }
-  ticking = true;
-})
+}
