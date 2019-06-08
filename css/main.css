@@ -51,6 +51,7 @@ h2 {
   height: 100vh;
   background: url("../src/img/background1.jpg") fixed center;
   background-size: cover;
+  background-position: 50% 0px;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,7 +82,9 @@ li .main-row{
   text-align: center;
   position: relative;
   top: 50px;
+  transform: rotate(5deg);
 }
+
 .card-container {
   position:absolute;
   width:90%;
