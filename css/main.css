@@ -1,31 +1,136 @@
+/* #8F1415 */
+@import url('https://fonts.googleapis.com/css?family=Ewert|Henny+Penny|Montserrat&display=swap');
 * {
-  maring: 0;
-  paddig: 0;
+  maring: 0px;
+  paddig: 0px;
   box-sizing: border-box;
 }
 
 body {
   background-color: #EEE0C6;
 }
-
-#header-img {
-  width: 70vw;
-  transition-duration: 2s;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  justify-content: center;
+  height: 100px;
 }
-.scrolled {
-  width: 300px !important;
-}
 
-.navbar {
+h2 {
+  font-family: Ewert;
+}
+.banner  {
+  display: inline-block;
+  height: 70px;
+  margin-top: 20px;
+}
+.toogle-menu{
+  height: 50px;
+  width: 50px;
+  display: flex;
   position: fixed;
+  background: #000;
+  right: 5px;
+  top: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav {
+  display:none;
+  position: fixed;
+}
+.nav a {
+  color: #BAA;
+  padding: 0 30px;
+}
+.background-image {
+  height: 100vh;
+  background: url("../src/img/background1.jpg") fixed center;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo {
+  height: 50%;
+  margin-top: 100px;
+}
+.btn {
+  border: solid #8F1415 2px;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, .2);
+  color: #EEE0C6;
+}
+.btn-main {
+  margin: 50px;
+}
+li .main-row{
+  display: none;
+}
+.row {
+  display: flex;
+}
+/* Card Styles */
+.card-title {
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+.card-container {
+  position:absolute;
+  width:90%;
+  margin: 15px 5%;
+  height: auto;
+  background: none;
+}
+
+.card-background {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
   width: 100%;
-  transition: 1s;
+  height: 100%;
+  background-color: white;
+  transform: rotate(-10deg);
+  transform-origin: 50% 50%;
+  z-index: -1;
 }
 
-.navbar-nav{
-
+.card-left {
+  font-family: "Henny Penny";
+  font-size: 1.2em;
+  display: inline-block;
+  border-right: solid black 1px;
+  padding: 0 25px;
+  margin-top: 40px;
 }
 
-.hero {
-  height: 110vh;
+.card-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-content {
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+  width: calc(100% - 135px);
+}
+
+.card-content h3, .card-content span {
+  font-family: "Montserrat";
+  font-size: .8em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-content span {
+  font-size: .5em;
 }
