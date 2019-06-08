@@ -60,7 +60,6 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 }
 .logo {
   height: 50%;
@@ -90,7 +89,7 @@ li .main-row{
 }
 
 .card-container {
-  position:absolute;
+  position:relative;
   width:90%;
   max-width: 425px;
   margin: 15px 5%;
@@ -155,4 +154,27 @@ li .main-row{
 
 .card-content span {
   font-size: .5em;
+}
+
+footer {
+  height: 200px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-flow: column;
+  font-size: .8em;
+}
+
+footer a {
+  text-decoration: none;
+  color: beige;
+  padding: 0 10px;
+  margin: 20px 0;
+}
+
+footer i {
+  padding: 0 10px;
+  font-size: 2em;
 }
