@@ -52,20 +52,20 @@ h2 {
   padding: 0 30px;
 }
 .background-image {
-  height: 100vh;
-  background: url("../src/img/background1.jpg") fixed center;
-  background-size: cover;
-  background-position: 50% 0px;
+  height: calc(100vh - 100px);
   display:flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: -999;
 }
 .logo {
   height: 50%;
   margin-top: 100px;
 }
 .btn {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
   border: solid #8F1415 2px;
   border-radius: 10px;
   background-color: rgba(255, 0, 0, .2);
@@ -92,7 +92,7 @@ li .main-row{
   position:relative;
   width:90%;
   max-width: 425px;
-  margin: 15px 5%;
+  margin: 15px 5% 50px 5%;
   height: auto;
   background: none;
 }
