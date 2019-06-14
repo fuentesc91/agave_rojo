@@ -15,8 +15,8 @@ function setBackgroundPosition($backgrounds) {
   })
 }
 
-setBackgroundPosition($backgrounds);
-
-window.onscroll = () => {
-  setBackgroundPosition($backgrounds);
-}
+// setBackgroundPosition($backgrounds);
+//
+// window.onscroll = () => {
+//   setBackgroundPosition($backgrounds);
+// }
