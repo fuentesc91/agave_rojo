@@ -14,9 +14,10 @@ function setBackgroundPosition($backgrounds) {
     }
   })
 }
+if(screen.width > 900){
+  setBackgroundPosition($backgrounds);
 
-// setBackgroundPosition($backgrounds);
-//
-// window.onscroll = () => {
-//   setBackgroundPosition($backgrounds);
-// }
+  window.onscroll = () => {
+    setBackgroundPosition($backgrounds);
+  }
+}
