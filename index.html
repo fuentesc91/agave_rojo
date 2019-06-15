@@ -13,21 +13,21 @@
     <header id="header">
       <div class="logo">
         <a href="index.html"><img src="src/img/logotipo.png"></a>
-        <i class="fas fa-bars"></i>
+        <i id="icon" class="fas fa-bars"></i>
       </div>
-      <div class="enlaces">
-        <a href=""><i class="fas fa-home"></i>Inicio</a>
-        <a href=""><i class="fas fa-ticket-alt"></i>Príximos Shows</a>
-        <a href=""><i class="fas fa-theater-masks"></i>Conócenos</a>
-        <a href=""><i class="fas fa-film"></i>Trailer</a>
+      <div id="enlaces" class="enlaces hidden">
+        <a class="enlace" href="#home"><i class="fas fa-home"></i>Inicio</a>
+        <a class="enlace" href="#proximo-show"><i class="fas fa-ticket-alt"></i>Próximos Shows</a>
+        <a class="enlace" href="#conocenos"><i class="fas fa-theater-masks"></i>Conócenos</a>
+        <a class="enlace" href="#trailer"><i class="fas fa-film"></i>Trailer</a>
       </div>
     </header>
-      <div class="background-image">
+      <div id="home" class="background-image">
         <a class="btn btn-main"
         href="https://www.ticketmaster.com.mx/search?tm_link=tm_homeA_header_search&user_input=el+agave+rojo&q=el+agave+rojo"
         target="_blank">Comprar Boletos</a>
       </div>
-      <div class="card-container">
+      <div id="proximo-show" class="card-container">
         <h2 class="card-title title">Próximo Show</h2>
         <div class="card-background"></div>
         <div class="card-left">
@@ -72,14 +72,14 @@
         </div>
       </div>
       <div class="background-image">
-      <h2 class="background-title">¡Conócenos!</h2>
+      <h2 id="conocenos" class="background-title">¡Conócenos!</h2>
       </div>
       <div class="content">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quos aspernatur veniam hic laboriosam dolorum ipsam commodi, nihil molestias aliquam, nisi ipsa nesciunt iure reiciendis quam ratione alias voluptates impedit.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consequuntur, illum sapiente eos nostrum ut explicabo harum recusandae mollitia ex sit dolore nam consequatur cupiditate, porro dolorem sed autem aspernatur.</p>
       </div>
       <div class="background-image">
-        <h2 class="background-title">Trailer</h2>
+        <h2 id="trailer" class="background-title">Trailer</h2>
       </div>
       <div class="content video-content">
         <iframe src="https://www.youtube.com/embed/3PF_JXdt4Ls" frameborder="0" allowfullscreen></iframe>

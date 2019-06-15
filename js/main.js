@@ -7,9 +7,10 @@ Array.from($backgrounds).forEach((background, i) => {
 })
 //function to position backgrounds where they should be in that moment
 function setBackgroundPosition($backgrounds) {
+    const height = screen.height/2;
     Array.from($backgrounds).forEach((background, i) => {
-      let backgroundPosition = (background.offsetTop - window.scrollY)/2.5
-      if(backgroundPosition > -250 && backgroundPosition < 250){
+      let backgroundPosition = (background.offsetTop - window.scrollY)/2
+      if(backgroundPosition > -height  && backgroundPosition < height){
       background.style.backgroundPositionY = `${backgroundPosition}px`;
     }
   })
